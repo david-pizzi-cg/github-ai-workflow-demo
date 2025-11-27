@@ -265,7 +265,7 @@ Guide AI through committing changes and creating a pull request with proper link
 
 **User Prompt:**
 ```
-Excellent! The fix looks good. Now let's commit this change and push it to create a PR. Make sure to link it to the issue we created earlier using "Fixes #[issue-URL]" in the commit message.
+Excellent! The fix looks good. Now let's commit this change and push it to create a PR. Make sure to link it to the issue we created earlier by using 'Fixes' followed by the complete GitHub issue URL.
 ```
 
 **Expected AI Actions:**
@@ -1177,4 +1177,5 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 
 
 **Ready to demonstrate how AI can catch and fix bugs before they reach version control!** 🚀
+
 
