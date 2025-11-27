@@ -332,15 +332,7 @@ This demonstrates the transition from **AI as a tool** (requiring step-by-step h
 
 ## 📋 Stage Scenario: CSS Stylesheet Bug
 
-### 🐛 **The Stage Scenario**
-
-The World Clock web application has a **critical bug** - the CSS stylesheet is not loading due to a typo in the HTML file:
-
-**File**: `index.html` (line 7)  
-**Issue**: `<link rel="stylesheet" href="styls.css">` ❌ (missing 'e')  
-**Should be**: `<link rel="stylesheet" href="styles.css">` ✅
-
-**Impact**: The entire page appears unstyled, breaking the user experience completely.
+**Note**: This stage uses the **same CSS bug scenario as Stage 1** (typo in `index.html` line 7: `styls.css` should be `styles.css`). The difference is in how we approach the fix.
 
 ### 🤖 **The Autonomous AI Strategy**
 
