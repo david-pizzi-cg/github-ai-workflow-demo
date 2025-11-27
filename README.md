@@ -1,8 +1,8 @@
-# GitHub AI Workflow Evolution - Complete Demo
+# GitHub AI Workflow Evolution - Multi-Stage Demo
 
 ## 🎯 Overview
 
-Experience the **complete evolution of AI in software development** through one comprehensive demo that demonstrates three distinct AI collaboration approaches. Using the same CSS bug scenario, you'll witness firsthand how AI transforms from a basic assistant requiring constant guidance to an autonomous quality-focused teammate.
+Experience the **complete evolution of AI in software development** through one comprehensive multi-stage demo that demonstrates three distinct AI collaboration approaches. Using the same CSS bug scenario, you'll witness firsthand how AI transforms from a basic assistant requiring constant guidance to an autonomous quality-focused teammate.
 
 ## 🔄 The Evolution Journey
 
@@ -21,9 +21,9 @@ graph LR
 - **Stage 2**: You assign the bug to AI and it handles everything independently
 - **Stage 3**: AI catches and fixes the bug before you even commit it
 
-## 🎮 How to Experience This Demo
+## 🎮 How to Experience This Multi-Stage Demo
 
-This comprehensive demo takes you through **three progressive AI collaboration styles** in one seamless experience. You'll work with the same codebase and bug scenario, but experience radically different AI behaviors and workflows.
+This comprehensive multi-stage demo takes you through **three progressive AI collaboration styles** in one seamless experience. You'll work with the same codebase and bug scenario, but experience radically different AI behaviors and workflows.
 
 **🎯 What You'll Discover:**
 How AI collaboration evolves from manual guidance → autonomous execution → proactive prevention, transforming both development speed and quality assurance.
@@ -76,22 +76,22 @@ There are currently no open issues in the david-pizzi-cg/github-ai-workflow-demo
 
 ---
 
-# Demo 1: GitHub MCP Demo - DevOps Workflow Demonstration
+# Stage 1: GitHub MCP - Human-Guided AI Workflow
 
-## 🎯 Demo Scenario Overview
+## 🎯 Stage Overview
 
-This project is the **first installment** in a comprehensive AI development workflow series, demonstrating **human-guided AI workflows** where AI provides assistance but requires step-by-step direction.
+This is **Stage 1** of a comprehensive multi-stage demo, demonstrating **human-guided AI workflows** where AI provides assistance but requires step-by-step direction.
 
-**Demo Series Evolution:**
-- **This Demo**: **Human-guided AI workflow (AI as tool)**
-- **Demo 2: GitHub Coding Agent Demo**: Autonomous AI workflow (AI as teammate)
-- **Demo 3: GitHub Copilot Instructions Demo**: Safeguards AI workflow (AI as quality gatekeeper)
+**Multi-Stage Demo Evolution:**
+- **This Stage (Stage 1)**: **Human-guided AI workflow (AI as tool)**
+- **Stage 2**: Autonomous AI workflow (AI as teammate)
+- **Stage 3**: Safeguards AI workflow (AI as quality gatekeeper)
 
-This project demonstrates a complete DevOps workflow using the **GitHub MCP (Model Context Protocol) Server** integration with VS Code Copilot, showcasing how AI can assist in the entire software development lifecycle from issue detection to deployment through a human-in-the-loop approach.
+This stage demonstrates a complete DevOps workflow using the **GitHub MCP (Model Context Protocol) Server** integration with VS Code Copilot, showcasing how AI can assist in the entire software development lifecycle from issue detection to deployment through a human-in-the-loop approach.
 
-## 📋 Demo Scenario: CSS Stylesheet Bug
+## 📋 Stage Scenario: CSS Stylesheet Bug
 
-### 🐛 **The Demo Scenario**
+### 🐛 **The Stage Scenario**
 
 The World Clock web application has a **critical bug** - the CSS stylesheet is not loading due to a typo in the HTML file:
 
@@ -103,7 +103,7 @@ The World Clock web application has a **critical bug** - the CSS stylesheet is n
 
 ### 🧠 **The Human-Guided Strategy**
 
-This demo showcases the traditional approach where AI serves as a powerful assistant, but requires human guidance at each step:
+This stage showcases the traditional approach where AI serves as a powerful assistant, but requires human guidance at each step:
 
 1. **Manual Issue Discovery**: Human identifies the problem and guides AI investigation
 2. **Step-by-Step Workflow**: AI executes each phase with explicit human prompts
@@ -112,7 +112,7 @@ This demo showcases the traditional approach where AI serves as a powerful assis
 
 ## 🎯 Learning Objectives
 
-This demo showcases:
+This stage showcases:
 - **Human-Guided AI Development**: How to direct AI through each step of the workflow
 - **GitHub MCP Integration**: Seamless GitHub operations from VS Code using MCP tools
 - **DevOps Fundamentals**: Complete workflow from issue discovery to deployment
@@ -124,7 +124,7 @@ This demo showcases:
 
 ```mermaid
 graph TD
-    P[🔧 Pre-Demo Setup: Create Demo Branch]
+    P[🔧 Pre-Stage Setup: Create Demo Branch]
     P --> A[🔍 Phase 1: Issue Discovery]
     A --> B[📝 Phase 2: Issue Management via GitHub MCP]
     B --> C[🌿 Phase 3: Create Hotfix Branch]
@@ -162,7 +162,7 @@ graph TD
 
 **Ready to experience AI as your guided assistant?** Follow the phases below for the complete human-directed workflow.
 
-### **Phase 0: Pre-Demo Setup** 🔧
+### **Phase 0: Pre-Stage Setup** 🔧
 
 **🎪 Setting the Stage for Guided AI Workflow**
 
@@ -265,12 +265,12 @@ Guide AI through committing changes and creating a pull request with proper link
 
 **User Prompt:**
 ```
-Excellent! The fix looks good. Now let's commit this change and push it to create a PR. Make sure to link it to the issue we created earlier using "Fixes #[issue-number]" in the commit message.
+Excellent! The fix looks good. Now let's commit this change and push it to create a PR. Make sure to link it to the issue we created earlier using "Fixes #[issue-URL]" in the commit message.
 ```
 
 **Expected AI Actions:**
 - Stage and commit changes with descriptive message
-- Include "Fixes #[issue-number]" for automatic issue linking
+- Include "Fixes #[issue-URL]" for automatic issue linking (use full URL, not just issue number)
 - Push the hotfix branch to remote repository
 - Use `mcp_github_create_pull_request` to create PR
 - Link PR to the original issue for tracking
@@ -313,26 +313,26 @@ Finally, can you now delete the demo branch both locally and remotely?
 
 ---
 
-# Demo 2: GitHub Coding Agent Demo - DevOps Workflow Demonstration
+# Stage 2: GitHub Coding Agent - Autonomous AI Workflow
 
-## 🎯 Demo Scenario Overview
+## 🎯 Stage Overview
 
-This project is the **second installment** in a comprehensive AI development workflow series, demonstrating the evolution from manual, human-guided workflows to **autonomous AI-driven development**.
+This is **Stage 2** of the comprehensive multi-stage demo, demonstrating the evolution from manual, human-guided workflows to **autonomous AI-driven development**.
 
-**Demo Series Evolution:**
-- **Demo 1: GitHub MCP Demo**: Human-guided AI workflow (AI as tool)
-- **This Demo**: **Autonomous AI workflow (AI as teammate)**
-- **Demo 3: GitHub Copilot Instructions Demo**: Safeguards AI workflow (AI as quality gatekeeper)
+**Multi-Stage Demo Evolution:**
+- **Stage 1**: Human-guided AI workflow (AI as tool)
+- **This Stage (Stage 2)**: **Autonomous AI workflow (AI as teammate)**
+- **Stage 3**: Safeguards AI workflow (AI as quality gatekeeper)
 
 **Philosophy Shift**: 
-- **Previous Demo**: Human-in-the-loop approach where AI assists but requires constant guidance
-- **This Demo**: AI-autonomous approach where humans delegate complex tasks to AI agents
+- **Previous Stage (Stage 1)**: Human-in-the-loop approach where AI assists but requires constant guidance
+- **This Stage (Stage 2)**: AI-autonomous approach where humans delegate complex tasks to AI agents
 
 This demonstrates the transition from **AI as a tool** (requiring step-by-step human direction) to **AI as a teammate** (capable of independent problem-solving and execution).
 
-## 📋 Demo Scenario: CSS Stylesheet Bug
+## 📋 Stage Scenario: CSS Stylesheet Bug
 
-### 🐛 **The Demo Scenario**
+### 🐛 **The Stage Scenario**
 
 The World Clock web application has a **critical bug** - the CSS stylesheet is not loading due to a typo in the HTML file:
 
@@ -353,7 +353,7 @@ This demo showcases the evolution to autonomous AI workflows where AI operates i
 
 ## 🎯 Learning Objectives
 
-This demo showcases:
+This stage showcases:
 - **Autonomous AI Development**: How AI can work independently with minimal human guidance
 - **GitHub Coding Agent Integration**: Automated development workflow from issue assignment to completion
 - **Task Delegation**: Moving from step-by-step prompting to high-level task assignment
@@ -402,7 +402,7 @@ graph TD
 
 **Ready to delegate complex tasks to your AI teammate?** Follow the phases below for autonomous AI development.
 
-### **Phase 0: Pre-Demo Setup** 🔧
+### **Phase 0: Pre-Stage Setup** 🔧
 
 **🎪 Setting the Stage for Autonomous AI Development**
 
@@ -613,24 +613,24 @@ Perfect! The autonomous fix is working. Can you clean up locally and switch back
 
 ---
 
-# Demo 3: GitHub Copilot Instructions Demo - Safeguards AI Workflow Demonstration
+# Stage 3: GitHub Copilot Instructions - Safeguards AI Workflow
 
-## 🎯 Demo Scenario Overview
+## 🎯 Stage Overview
 
-This project is the **third installment** in a comprehensive AI development workflow series, demonstrating the evolution from reactive to **safeguards-driven development practices**.
+This is **Stage 3** of the comprehensive multi-stage demo, demonstrating the evolution from reactive to **safeguards-driven development practices**.
 
-**Demo Series Evolution:**
-- **Demo 1: GitHub MCP Demo**: Human-guided AI workflow (AI as tool)
-- **Demo 2: GitHub Coding Agent Demo**: Autonomous AI workflow (AI as teammate)
-- **This Demo**: **Safeguards AI workflow (AI as quality gatekeeper)**
+**Multi-Stage Demo Evolution:**
+- **Stage 1**: Human-guided AI workflow (AI as tool)
+- **Stage 2**: Autonomous AI workflow (AI as teammate)
+- **This Stage (Stage 3)**: **Safeguards AI workflow (AI as quality gatekeeper)**
 
-This project demonstrates how **GitHub Copilot Instructions** can be used to create specialized AI personas that catch common development issues before they reach version control, using a CSS stylesheet bug as a case study.
+This stage demonstrates how **GitHub Copilot Instructions** can be used to create specialized AI personas that catch common development issues before they reach version control, using a CSS stylesheet bug as a case study.
 
-## 📋 Demo Scenario: Catching the CSS Bug Through AI Safeguards
+## 📋 Stage Scenario: Catching the CSS Bug Through AI Safeguards
 
-### 🐛 **The Demo Scenario**
+### 🐛 **The Stage Scenario**
 
-This demo starts with a **working World Clock web application** and then demonstrates how AI safeguards catch bugs during development:
+This stage starts with a **working World Clock web application** and then demonstrates how AI safeguards catch bugs during development:
 
 **Starting State**: Fully functional website with correct CSS reference  
 **Demo Action**: Manually introduce CSS typo to simulate common development error  
@@ -642,7 +642,7 @@ This demo starts with a **working World Clock web application** and then demonst
 
 ### 🧠 **The Safeguards Strategy**
 
-Instead of fixing bugs after they reach production, this demo shows how to use **GitHub Copilot Instructions** to create quality-focused AI behavior that catches issues during development:
+Instead of fixing bugs after they reach production, this stage shows how to use **GitHub Copilot Instructions** to create quality-focused AI behavior that catches issues during development:
 
 1. **Prompt Engineer Agent**: Specialized agent for creating well-structured, effective prompts for any development task
 2. **Enhanced General Instructions**: Always-on DevOps practices embedded in default Copilot behavior
@@ -651,7 +651,7 @@ Instead of fixing bugs after they reach production, this demo shows how to use *
 
 ## 🎯 Learning Objectives
 
-This demo showcases:
+This stage showcases:
 - **GitHub Copilot Instructions**: Creating specialized AI personas for different development roles
 - **Pre-Commit Quality Gates**: Using AI to catch issues before they reach version control
 - **Prompt Engineering**: Best practices for creating effective AI instructions and reusable prompts
@@ -888,7 +888,7 @@ After completing this demo, you'll understand how to:
 ---
 
 **Ready to demonstrate how AI can catch and fix bugs before they reach version control!** 🚀
-    P[🔧 Pre-Demo Setup: Create Demo Branch]
+    P[🔧 Pre-Stage Setup: Pull Fixed Demo Branch]
     P --> A[👨‍💻 Phase 1: Create Prompt Engineer Agent]
     A --> B[📝 Phase 2: Generate File Reference Validation Prompt]
     B --> C[🧪 Phase 3: Execute File Validation Testing Prompt]
@@ -922,7 +922,7 @@ After completing this demo, you'll understand how to:
 
 ### **🔧 MCP Server Setup (Optional)**
 
-While this demo focuses on Copilot Instructions rather than GitHub operations, you may want the GitHub MCP Server for additional functionality:
+While this stage focuses on Copilot Instructions rather than GitHub operations, you may want the GitHub MCP Server for additional functionality:
 
 1. **Open VS Code** in this project directory
 2. Press **Ctrl+Shift+P** to open the Command Palette and search for `MCP: Show Installed Server`
@@ -930,12 +930,12 @@ While this demo focuses on Copilot Instructions rather than GitHub operations, y
 4. Find **github** in the list, right-click it, and select **Start Server** (if present)
 5. **Verify connection** – the server should show as "Connected" or "Running"
 
-**Note**: This demo primarily uses local development and testing, so MCP server is optional but can enhance the experience with additional GitHub integration capabilities.
+**Note**: This stage primarily uses local development and testing, so MCP server is optional but can enhance the experience with additional GitHub integration capabilities.
 
 **Troubleshooting:**
 - If no Start button or MCP server appears, ensure the `.vscode/mcp.json` file exists
 - Restart VS Code if the MCP server doesn't appear
-- The demo will work fine without MCP server for the core safeguards functionality
+- This stage will work fine without MCP server for the core safeguards functionality
 - **For detailed MCP setup instructions**: [GitHub MCP Server Documentation](https://github.com/github/github-mcp-server)
 - **For MCP with Copilot Chat**: [GitHub Copilot MCP Documentation](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp)
 
@@ -948,11 +948,11 @@ While this demo focuses on Copilot Instructions rather than GitHub operations, y
 
 **Ready?** Follow the phases below to build a comprehensive safeguards system.
 
-### **Pre-Demo Setup: Pull Fixed Demo Branch** 🔧
+### **Pre-Stage Setup: Pull Fixed Demo Branch** 🔧
 
 **🎪 Setting the Stage for Safeguards Demonstration**
 
-**Starting State**: Demo 2 has fixed the CSS bug and merged changes to the remote demo branch. Now you'll pull those fixes locally to demonstrate preventive safeguards.
+**Starting State**: Stage 2 has fixed the CSS bug and merged changes to the remote demo branch. Now you'll pull those fixes locally to demonstrate preventive safeguards.
 
 **What this phase achieves**: Gets the working CSS code locally so you can manually introduce a bug and watch AI safeguards catch it.
 
@@ -1121,11 +1121,11 @@ Perfect! Now let's commit all these Copilot improvements we've added to the demo
 
 ### **Complete Demo Cleanup: Delete All Demo Branches** 🔧
 
-**What this phase achieves**: Cleans up the entire demonstration by deleting both local and remote demo branches, returning to a clean main branch state.
+**What this phase achieves**: Cleans up the entire multi-stage demo by deleting both local and remote demo branches, returning to a clean main branch state.
 
 **User Prompt:**
 ```
-The demo series is complete! Please clean up by deleting the demo branch both locally and remotely, switch back to main branch, and remove any remaining demo artifacts.
+The multi-stage demo is complete! Please clean up by deleting the demo branch both locally and remotely, switch back to main branch, and remove any remaining demo artifacts.
 ```
 
 **Expected AI Actions:**
@@ -1138,7 +1138,7 @@ The demo series is complete! Please clean up by deleting the demo branch both lo
 - Verify complete cleanup with `git status` and directory listing
 - Confirm workspace restored to original main branch state
 
-**🏆 Demo Series Complete**: You've experienced the complete evolution of AI collaboration - from guided assistant to autonomous teammate to proactive quality guardian!
+**🏆 Multi-Stage Demo Complete**: You've experienced the complete evolution of AI collaboration - from guided assistant to autonomous teammate to proactive quality guardian!
 
 ## 📚 Key Takeaways
 
