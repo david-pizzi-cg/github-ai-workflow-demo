@@ -423,7 +423,7 @@ Request AI to investigate the styling issue. Unlike the guided approach, AI will
 
 **User Prompt:**
 ```
-Copilot, I just opened my World Clock website and it looks completely broken - all the beautiful styling is missing and it's just plain HTML. Can you investigate what's wrong with the styling?
+Copilot, I just opened my World Clock website and it looks completely broken - all the beautiful styling is missing and it's just plain HTML. Can you investigate what's wrong with the styling but do not fix?
 ```
 
 **Expected AI Actions:**
@@ -1169,5 +1169,6 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 
 
 **Ready to demonstrate how AI can catch and fix bugs before they reach version control!** 🚀
+
 
 
