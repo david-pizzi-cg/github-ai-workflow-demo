@@ -459,16 +459,30 @@ This is where the magic happens - instead of guiding AI step-by-step, you simply
 
 **What this phase achieves**: Demonstrates the shift from micro-management to task delegation, where AI takes full ownership of the development workflow.
 
-**User Prompt:**
-```
-Perfect! Now I want to assign this issue to GitHub Coding Agent so it can fix this bug autonomously. Can you assign the issue to Copilot and make sure it targets the demo branch for any PR it creates?
-```
+#### **⚠️ Manual Assignment Required - MCP Server Limitation**
 
-**Expected AI Actions:**
-- Use GitHub MCP tools to assign issue to Coding Agent
-- Provide clear instructions for targeting demo branch
-- Set up autonomous workflow for AI teammate
-- Confirm assignment and next steps
+**Important**: The GitHub MCP Server's `mcp_github_assign_copilot_to_issue` tool currently does **not support specifying a base branch**. It only accepts:
+- `owner` (repository owner)
+- `repo` (repository name)
+- `issueNumber` (issue number)
+
+Since we need to target the `demo` branch (not `main`) for this demonstration, you must **assign the issue manually through GitHub's web interface**.
+
+#### **📋 Manual Assignment Steps:**
+
+1. **Navigate to the GitHub issue** in your web browser (from the previous phase)
+2. **Locate the "Assign to Copilot" button** in the top-right corner of the issue page
+3. **Click "Assign to Copilot"** to open the assignment dialog
+4. **Click the branch selector icon** (second icon below the repository dropdown) to open the "Select base branch" dialog
+5. **Choose `demo`** from the branch list (it will show a checkmark when selected)
+6. **Close the branch selector** and optionally add instructions in the "Optional prompt" field
+7. **Click "Assign"** to confirm and start GitHub Coding Agent
+
+![Copilot Assignment Dialog](./screenshots/copilot-assignment-dialog.png)
+
+*The assignment dialog with the base branch selector showing `demo` selected. This ensures the PR will target the demo branch instead of main.*
+
+**Why this matters**: GitHub Coding Agent will create its PR against the branch you specify here. By selecting `demo`, we ensure the fix is merged to our demonstration branch, not directly to `main`.
 
 ### **Phase 4: Autonomous Development (GitHub Coding Agent)** 🛠️
 
@@ -493,24 +507,6 @@ Watch as GitHub Coding Agent autonomously analyzes the problem, creates a soluti
 GitHub Coding Agent autonomously handles the entire integration workflow, creating a polished PR ready for human review.
 
 **What this phase achieves**: Shows AI's ability to handle complex integration tasks including commit creation, PR preparation, and issue linking.
-
-**Expected GitHub Coding Agent Actions:**
-1. **Professional Commits**: Creates meaningful commit messages with proper formatting
-2. **Comprehensive PR**: Creates detailed pull request with:
-   - Clear description of the bug and fix
-   - Automated linking to original issue
-   - Code change summary
-   - Testing verification notes
-3. **Quality Documentation**: Includes all necessary context for human review
-4. **Process Automation**: Handles all technical aspects of PR creation
-   - **Base**: demo branch (if instructions are followed)
-   - **Head**: The copilot fix branch (`copilot/fix-css-stylesheet-typo`)
-   - **Description**: Includes "Fixes #{issue-number}" for auto-linking
-   - **Details**: Comprehensive description of the fix and testing
-3. **Code Review**: Self-reviews the changes for quality assurance
-4. **Status Updates**: Comments on the issue with progress updates
-
-### **👁️ Monitoring GitHub Coding Agent Progress**
 
 **Phase 5 is a long-running automated phase.** Here's how to track the GitHub Coding Agent's work:
 
@@ -538,6 +534,22 @@ The GitHub Coding Agent will work autonomously until it completes the fix and re
 *When you see this review request, the agent has finished its work and Phase 6 can begin.*
 
 > **⚠️ Important**: Do not proceed to Phase 6 until GitHub Coding Agent has completed its work and explicitly requested a review. The automated phase can take several minutes depending on the complexity of the fix.
+
+**Expected GitHub Coding Agent Actions:**
+1. **Professional Commits**: Creates meaningful commit messages with proper formatting
+2. **Comprehensive PR**: Creates detailed pull request with:
+   - Clear description of the bug and fix
+   - Automated linking to original issue
+   - Code change summary
+   - Testing verification notes
+3. **Quality Documentation**: Includes all necessary context for human review
+4. **Process Automation**: Handles all technical aspects of PR creation
+   - **Base**: demo branch (if instructions are followed)
+   - **Head**: The copilot fix branch (`copilot/fix-css-stylesheet-typo`)
+   - **Description**: Includes "Fixes #{issue-number}" for auto-linking
+   - **Details**: Comprehensive description of the fix and testing
+3. **Code Review**: Self-reviews the changes for quality assurance
+4. **Status Updates**: Comments on the issue with progress updates
 
 ### **Phase 6: Human Review & Completion** 🎉
 
@@ -584,24 +596,22 @@ Great! Now that the fix is merged, can you verify locally that all is working fi
 - Close the issue with appropriate completion status
 - Summarize the successful autonomous workflow completion
 
-### **Phase 8: Post-Demo Cleanup** 🔧
+### **Phase 8: Pull Latest Changes** 🔧
 
-**🧹 Clean Workspace: Completing the Autonomous Workflow Cycle**
+**🔄 Sync Local Workspace: Get the Fixed Demo Branch**
 
-**What this phase achieves**: Cleans up locally while keeping the fixed demo branch remotely for Stage 3.
+**What this phase achieves**: Pulls the latest version of the demo branch locally to verify the autonomous fix.
 
 **User Prompt:**
 ```
-Perfect! The autonomous fix is working. Can you clean up locally and switch back to main, but keep the demo branch remotely for Stage 3?
+Can you pull the latest version of the demo branch locally?
 ```
 
 **Expected AI Actions:**
-- Switch back to main branch locally
-- Delete local demo branch
-- **Keep remote demo branch** with the CSS fix for Stage 3
-- Confirm local cleanup completion
+- Pull latest changes from remote demo branch
+- Confirm successful sync with the CSS fix
 
-**🏁 Stage 2 Complete**: You've experienced autonomous AI development. The fix exists on the remote demo branch, ready for Stage 3's safeguards demonstration.
+**🏁 Stage 2 Complete**: You've experienced autonomous AI development. The fix is now synced locally, ready for Stage 3's safeguards demonstration.
 
 ---
 
