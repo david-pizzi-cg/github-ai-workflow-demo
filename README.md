@@ -44,7 +44,28 @@ Before starting the demo, ensure the GitHub MCP Server is running:
 3. The **MCP Servers - Installed** panel will appear in the bottom left of VS Code
 4. Find **github** in the list, right-click it, and select **Start Server**
 5. **Verify connection** – the server should show as "Connected" or "Running"
-6. **Test MCP tools** – you should see GitHub MCP functions available in Copilot
+
+#### ✅ Testing MCP Server Connection
+
+To verify the GitHub MCP Server is properly connected and tools are available:
+
+1. **Open GitHub Copilot Chat** (Ctrl+Shift+I or click the Copilot icon)
+2. **Type a test prompt** that requires GitHub MCP tools:
+   ```
+   Can you list the github issues in this repository using MCP server?
+   ```
+3. **Observe the response**:
+   - ✅ **Success**: Copilot will use `mcp_github_list_issues` or similar tools and return repository data
+   - ❌ **Failure**: Copilot will respond without using MCP tools or indicate tools aren't available
+
+**Example successful test:**
+```
+User: Can you list the github issues in this repository?
+Copilot: 
+I'll list the GitHub issues in this repository using the MCP server.
+[Ran List issues - github (MCP Server)]
+There are currently no open issues in the david-pizzi-cg/github-ai-workflow-demo repository.
+```
 
 **Troubleshooting:**
 - If no Start button or MCP server appears, ensure the `.vscode/mcp.json` file exists
