@@ -404,7 +404,7 @@ graph TD
 
 **User Prompt:**
 ```
-Can you create a demo branch from main and switch to it, so I can demonstrate autonomous AI fixing the CSS bug?
+Can you create a demo branch remotely from main and switch to it.
 ```
 
 **Expected AI Actions:**
@@ -1169,6 +1169,7 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 
 
 **Ready to demonstrate how AI can catch and fix bugs before they reach version control!** 🚀
+
 
 
 
