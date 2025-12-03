@@ -20,8 +20,10 @@ graph LR
 
 **Same Bug, Three Approaches:**
 - **Stage 1**: You direct AI to find and fix the CSS bug step-by-step
-- **Stage 2**: You assign the bug to AI and it handles everything independently
+- **Stage 2**: You assign the bug to AI and it handles everything independently *(requires GitHub Copilot Pro or higher)*
 - **Stage 3**: AI catches and fixes the bug before you even commit it
+
+> **📋 Stage 2 Note**: Stage 2 requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include this capability. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents) for details.
 
 ## 🎮 How to Use This Multi-Stage Demo
 
@@ -33,6 +35,7 @@ How AI collaboration progresses from manual guidance → autonomous execution �
 ## Prerequisites
 
 - **VS Code with GitHub Copilot**: AI development assistant ready for guided workflows
+- **GitHub Copilot Pro or higher**: Required for Stage 2 (Copilot Coding Agent). Free plan covers Stage 1 and 3 only. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents)
 - **Claude Sonnet 4 or higher recommended**: This demo was created and tested using Claude Sonnet 4. Other models may exhibit different behaviour and produce varying results
 - **GitHub MCP Server configured**: For seamless GitHub operations from VS Code
 - **Live Server extension installed**: OPTIONAL - to visualise the bug and fix
@@ -321,6 +324,8 @@ Finally, can you now delete the demo branch both locally and remotely?
 ## 🎯 Stage Overview
 
 This is **Stage 2** of the comprehensive multi-stage demo, demonstrating the evolution from manual, human-guided workflows to **autonomous AI-driven development**.
+
+> **⚠️ GitHub Copilot Plan Requirement**: This stage requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise) to access the Copilot Coding Agent. The free plan does not include this feature. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents).
 
 **Multi-Stage Demo Evolution:**
 - **Stage 1**: Human-guided AI workflow (AI as tool)
@@ -634,6 +639,8 @@ This stage builds four layers of protection:
 - Your `demo` branch exists with the CSS bug fixed
 - The website is working correctly
 - You're ready to add safeguards that will catch future bugs
+
+**GitHub Copilot Plan Requirement**: Stage 2 requires **GitHub Copilot Pro** (or higher: Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include access to Copilot Coding Agent. For plan details, see [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents).
 
 ## 🗺️ Stage Overview
 
