@@ -2,7 +2,9 @@
 
 ## 🎯 Overview
 
-Experience the **complete evolution of AI in software development** through one comprehensive multi-stage demo that demonstrates three distinct AI collaboration approaches. Using the same CSS bug scenario, you'll witness firsthand how AI transforms from a basic assistant requiring constant guidance to an autonomous quality-focused teammate.
+This multi-stage demonstration explores three distinct AI collaboration approaches using a consistent CSS bug scenario. The demo illustrates the progression from guided AI assistance to autonomous execution and proactive quality assurance.
+
+> **⚠️ Important**: This demo was created and tested using **Claude Sonnet 4**. For best results and consistent behaviour matching the documented workflow, use Claude Sonnet 4 or higher. Other language models may produce different results and behaviours.
 
 ## 🔄 The Evolution Journey
 
@@ -11,9 +13,9 @@ graph LR
     A[🛠️ STAGE 1<br/>AI as Tool<br/><br/>Human Guides<br/>Every Step] --> B[🤖 STAGE 2<br/>AI as Teammate<br/><br/>AI Works<br/>Autonomously]
     B --> C[🛡️ STAGE 3<br/>AI as Guardian<br/><br/>AI Prevents<br/>Bugs Proactively]
     
-    style A fill:#4ecdc4,color:#fff,stroke:#333,stroke-width:3px
-    style B fill:#45b7d1,color:#fff,stroke:#333,stroke-width:3px
-    style C fill:#96ceb4,color:#fff,stroke:#333,stroke-width:3px
+    style A fill:#4ecdc4,colour:#fff,stroke:#333,stroke-width:3px
+    style B fill:#45b7d1,colour:#fff,stroke:#333,stroke-width:3px
+    style C fill:#96ceb4,colour:#fff,stroke:#333,stroke-width:3px
 ```
 
 **Same Bug, Three Approaches:**
@@ -21,18 +23,19 @@ graph LR
 - **Stage 2**: You assign the bug to AI and it handles everything independently
 - **Stage 3**: AI catches and fixes the bug before you even commit it
 
-## 🎮 How to Experience This Multi-Stage Demo
+## 🎮 How to Use This Multi-Stage Demo
 
-This comprehensive multi-stage demo takes you through **three progressive AI collaboration styles** in one seamless experience. You'll work with the same codebase and bug scenario, but experience radically different AI behaviors and workflows.
+This demo covers three progressive AI collaboration approaches using the same codebase and bug scenario. Each stage demonstrates different AI capabilities and workflows.
 
-**🎯 What You'll Discover:**
-How AI collaboration evolves from manual guidance → autonomous execution → proactive prevention, transforming both development speed and quality assurance.
+**🎯 What You'll Learn:**
+How AI collaboration progresses from manual guidance → autonomous execution → proactive prevention, affecting both development processes and quality assurance practices.
 
 ## Prerequisites
 
 - **VS Code with GitHub Copilot**: AI development assistant ready for guided workflows
+- **Claude Sonnet 4 or higher recommended**: This demo was created and tested using Claude Sonnet 4. Other models may exhibit different behaviour and produce varying results
 - **GitHub MCP Server configured**: For seamless GitHub operations from VS Code
-- **Live Server extension installed**: OPTIONAL - to visualize the bug and fix
+- **Live Server extension installed**: OPTIONAL - to visualise the bug and fix
 - **Git repository connected to GitHub**: With appropriate permissions for issues and PRs
 
 ### 🔧 MCP Server Setup
@@ -152,15 +155,15 @@ graph TD
     style G fill:#ff6b6b
 ```
 
-### **The Journey Ahead: Quick Start Overview**
+### **Quick Start Overview**
 
-1. **🔧 Setup & Verification**: Create demo branch and see the broken, unstyled website
+1. **🔧 Setup & Verification**: Create demo branch and observe the broken, unstyled website
 2. **🔍 Guided Discovery**: Direct AI to investigate and identify the CSS linking issue
 3. **📋 Issue Management**: Use MCP tools to create and track the bug via GitHub issues
 4. **🛠️ Collaborative Development**: Guide AI through branching, fixing, and PR creation
 5. **✨ Human Oversight**: Review, approve, and merge while AI handles technical execution
 
-**Ready to experience AI as your guided assistant?** Follow the phases below for the complete human-directed workflow.
+Follow the phases below for the human-directed workflow.
 
 ### **Phase 0: Pre-Stage Setup** 🔧
 
@@ -182,11 +185,11 @@ Can you create a demo branch remotely from main and switch to it.
 
 ### **Phase 1: Issue Discovery** 🔍
 
-**🕵️ Guided Investigation: Teaching AI to Analyze Problems**
+**🕵️ Guided Investigation: AI Problem Analysis**
 
-Direct your AI assistant to investigate the styling issue. This demonstrates how to guide AI through problem analysis and root cause identification.
+Direct the AI assistant to investigate the styling issue. This demonstrates how to guide AI through problem analysis and root cause identification.
 
-**What this phase achieves**: Shows how to prompt AI for technical investigation while maintaining human oversight of the discovery process.
+**What this phase achieves**: Demonstrates prompting AI for technical investigation while maintaining human oversight of the discovery process.
 
 **User Prompt:**
 ```
@@ -220,9 +223,9 @@ Now that we've found the CSS link typo, can you create a GitHub issue to track t
 
 ### **Phase 3: Create Hotfix Branch** 🌿
 
-**🌱 Strategic Branching: Implementing Best Practices**
+**🌱 Strategic Branching: Best Practices**
 
-Guide AI through proper branching strategy for hotfixes. This demonstrates professional development workflows and Git best practices.
+Guide AI through proper branching strategy for hotfixes. This demonstrates standard development workflows and Git best practices.
 
 **What this phase achieves**: Creates a dedicated hotfix branch following naming conventions, preparing for isolated bug fix development.
 
@@ -382,15 +385,15 @@ graph TD
     style F fill:#a8e6cf
 ```
 
-### **The Journey Ahead: Quick Start Overview**
+### **Quick Start Overview**
 
 1. **🔧 Setup & Assignment**: Create demo branch and assign issue to GitHub Coding Agent
-2. **🤖 Autonomous Planning**: Watch AI analyze requirements and create execution plan
+2. **🤖 Autonomous Planning**: Observe AI analyzing requirements and creating execution plan
 3. **🛠️ Independent Execution**: AI handles branching, coding, commit, and PR creation autonomously
 4. **👨‍💻 Human Review**: Focus on reviewing completed work rather than directing each step
-5. **✨ Streamlined Workflow**: Experience the efficiency of AI-as-teammate collaboration
+5. **✨ Streamlined Workflow**: Observe the efficiency of AI-as-teammate collaboration
 
-**Ready to delegate complex tasks to your AI teammate?** Follow the phases below for autonomous AI development.
+Follow the phases below for autonomous AI development.
 
 ### **Phase 0: Pre-Stage Setup** 🔧
 
@@ -433,7 +436,7 @@ Copilot, I just opened my World Clock website and it looks completely broken - a
 
 **📋 Autonomous Issue Creation: AI-Driven Project Management**
 
-Demonstrate how AI autonomously creates comprehensive GitHub issues with proper categorization and detailed descriptions.
+Demonstrate how AI autonomously creates comprehensive GitHub issues with proper categorisation and detailed descriptions.
 
 **What this phase achieves**: Shows AI's ability to independently manage project tracking by creating well-structured issues with appropriate metadata.
 
@@ -484,9 +487,9 @@ Since we need to target the `demo` branch (not `main`) for this demonstration, y
 
 ### **Phase 4: Autonomous Development & Integration (GitHub Coding Agent)** 🛠️📤
 
-**🔧 AI Teammate in Action: Independent Problem-Solving Through PR Creation**
+**🔧 AI Teammate in Action: Independent Problem-Solving**
 
-Watch as GitHub Coding Agent autonomously analyzes the problem, creates a solution strategy, implements the fix, and prepares a polished PR ready for human review - all without requiring step-by-step guidance.
+Observe as GitHub Coding Agent autonomously analyzes the problem, creates a solution strategy, implements the fix, and prepares a PR for human review - all without requiring step-by-step guidance.
 
 **What this phase achieves**: Demonstrates AI working independently through the complete development lifecycle - from analyzing requirements to creating a review-ready pull request with proper issue linking.
 
@@ -541,9 +544,9 @@ The GitHub Coding Agent will work autonomously until it completes the fix and re
 
 **👩‍💼 Human Oversight: Review and Approve AI Work**
 
-Experience the evolved role of humans in AI-driven workflows - focusing on review and approval rather than direction and micro-management.
+This phase demonstrates the role of humans in AI-driven workflows - focusing on review and approval rather than direction and micro-management.
 
-**What this phase achieves**: Demonstrates the shift from directing AI work to reviewing completed solutions, showcasing the efficiency of AI-as-teammate collaboration.
+**What this phase achieves**: Illustrates the shift from directing AI work to reviewing completed solutions, demonstrating the efficiency of AI-as-teammate collaboration.
 
 **User Prompt:**
 ```
@@ -580,7 +583,7 @@ Great! Now that the fix is merged, can you verify locally that all is working fi
 - Test the fix by checking file content and git history
 - Add a comprehensive closure comment to the GitHub issue
 - Close the issue with appropriate completion status
-- Summarize the successful autonomous workflow completion
+- Summarise the successful autonomous workflow completion
 
 **🏁 Stage 2 Complete**: You've experienced autonomous AI development. The fix is now verified locally, ready for Stage 3's safeguards demonstration.
 
@@ -597,7 +600,7 @@ This is **Stage 3** of the comprehensive multi-stage demo, demonstrating the evo
 - **Stage 2**: Autonomous AI workflow (AI as teammate)
 - **This Stage (Stage 3)**: **Safeguards AI workflow (AI as quality gatekeeper)**
 
-Instead of fixing bugs after they're discovered, this stage shows how **GitHub Copilot Instructions** create specialized AI personas that automatically catch and fix issues before they reach version control.
+Instead of fixing bugs after they're discovered, this stage shows how **GitHub Copilot Instructions** create specialised AI personas that automatically catch and fix issues before they reach version control.
 
 ## 📋 Stage Scenario
 
@@ -612,14 +615,14 @@ Instead of fixing bugs after they're discovered, this stage shows how **GitHub C
 
 This stage builds four layers of protection:
 
-1. **Prompt Engineer Agent**: Specialized AI for creating effective development prompts
+1. **Prompt Engineer Agent**: Specialised AI for creating effective development prompts
 2. **Automated Testing**: Jest-based file reference validation
 3. **Enhanced General Instructions**: AI enforces test-passing before commits
 4. **Pre-Commit Detection**: Bugs caught and fixed during normal workflow
 
 ## 🎯 Learning Objectives
 
-- **GitHub Copilot Instructions**: Creating specialized AI personas for development roles
+- **GitHub Copilot Instructions**: Creating specialised AI personas for development roles
 - **Pre-Commit Quality Gates**: AI catches issues before version control
 - **Prompt Engineering**: Reusable, well-structured AI instructions
 - **Automated Safeguards**: Seamless testing integration in development workflow
@@ -632,17 +635,17 @@ This stage builds four layers of protection:
 - The website is working correctly
 - You're ready to add safeguards that will catch future bugs
 
-## 🗺️ The Journey Ahead
+## 🗺️ Stage Overview
 
-This stage walks you through building a complete safeguards system:
+This stage covers building a complete safeguards system:
 
-1. **🎨 Create Specialized AI** - Build a Prompt Engineer agent for development tasks
-2. **📝 Generate Test Prompt** - Use your agent to create file validation testing
+1. **🎨 Create Specialised AI** - Build a Prompt Engineer agent for development tasks
+2. **📝 Generate Test Prompt** - Use the agent to create file validation testing
 3. **🧪 Implement Tests** - Add Jest-based file reference validation
 4. **🛡️ Establish Quality Gates** - Configure AI to enforce testing before commits
-5. **🎪 Demonstrate Safeguards** - Watch AI catch and fix bugs automatically
+5. **🎪 Demonstrate Safeguards** - Observe AI catching and fixing bugs automatically
 
-**Ready to build your AI quality guardian?** Follow the phases below.
+Follow the phases below.
 
 ## 🔄 Workflow Diagram
 
@@ -655,28 +658,30 @@ graph TD
     D --> E[🛡️ Phase 5: Manually Introduce Bug & Test Safeguards]
     E --> F[🔧 Complete Demo Cleanup: Delete Demo Branch]
     
-    A1["Configure specialized prompting agent"] --> A
+    A1["Configure specialised prompting agent"] --> A
     B1["AI generates simple file validation prompt"] --> B
     C1["Execute prompt to add Jest file reference tests"] --> C
     D1["Update .github/copilot-instructions.md with safeguards"] --> D
     E1["Manually introduce CSS bug, then trigger auto-detection & fix"] --> E
     F1["Delete demo branch locally and remotely"] --> F
     
-    style A fill:#45b7d1,color:#fff
+    style A fill:#45b7d1,colour:#fff
     style B fill:#96ceb4
     style C fill:#feca57
     style D fill:#ff9ff3
     style E fill:#a29bfe
-    style F fill:#ff6b6b,color:#fff
+    style F fill:#ff6b6b,colour:#fff
 ```
 
 ### **Phase 1: Create Prompt Engineer Agent** 👨‍💻
 
-**🎨 Crafting Your AI Specialist**
+**🎨 Creating an AI Specialist**
 
-Create a specialized AI persona that excels at prompt engineering - your go-to expert for crafting effective, well-structured prompts for any development task.
+Create a specialised AI persona focused on prompt engineering - an agent for crafting effective, well-structured prompts for development tasks.
 
-**What this phase achieves**: Establishes an AI specialist that transforms how you communicate with AI, ensuring every request is optimally structured for success.
+**What this phase achieves**: Establishes an AI specialist that improves how you communicate with AI, helping structure requests more effectively.
+
+> **💡 Note**: Whilst we only use this agent once in this demo, creating reusable specialised agents represents best practice for prompt engineering. In real-world scenarios, you would reuse this Prompt Engineer agent across multiple projects and tasks, making it a valuable investment rather than one-off overhead.
 
 **User Prompt:**
 ```
@@ -685,18 +690,18 @@ I want to create a GitHub Copilot agent for a "Prompt Engineer" role, please cre
 
 **Expected AI Actions:**
 - Create `.github/agents/prompt-engineer.agent.md` file
-- Define specialized instructions for prompt engineering best practices
+- Define specialised instructions for prompt engineering best practices
 - Include guidelines for prompt structure, clarity, and specificity
 - Provide templates for different types of development prompts  
 - Configure agent to analyze requirements and generate actionable, well-crafted prompts
 
 ### **Phase 2: Generate File Reference Validation Prompt** 📝
 
-**🔍 Putting Your Prompt Engineer to Work**
+**🔍 Using the Prompt Engineer**
 
-See your Prompt Engineer agent in action! It will analyze the World Clock application and create a focused prompt for Jest-based file reference validation.
+The Prompt Engineer agent will analyse the World Clock application and create a focused prompt for Jest-based file reference validation.
 
-**What this phase achieves**: Demonstrates specialized AI personas by creating a surgical, well-structured prompt for testing file references. Simple and focused - checking that CSS and script files exist where HTML references them.
+**What this phase achieves**: Demonstrates specialised AI personas by creating a well-structured prompt for testing file references. The prompt focuses on checking that CSS and script files exist where HTML references them.
 
 **User Prompt:**
 ```
@@ -715,11 +720,11 @@ See your Prompt Engineer agent in action! It will analyze the World Clock applic
 
 ### **Phase 3: Execute File Validation Testing Prompt** 🧪
 
-**⚗️ From Blueprint to Reality**
+**⚗️ Implementing the Tests**
 
 Execute the crafted prompt to add Jest-based file reference validation. This creates the testing foundation that will catch the CSS bug in Phase 5.
 
-**What this phase achieves**: Transform the specialized prompt into a working test suite. Creates detective system that validates file references and will catch missing/misnamed files.
+**What this phase achieves**: Transforms the specialised prompt into a working test suite. Creates a validation system that checks file references and will catch missing or misnamed files.
 
 **User Prompt:**
 ```
@@ -739,23 +744,23 @@ Please execute the file validation testing prompt file-validation.prompt.md to a
 
 ### **Phase 4: Enhance General Copilot Instructions** ⚙️
 
-**🛡️ Creating Your AI Quality Guardian**
+**🛡️ Configuring AI Quality Gates**
 
-Transform GitHub Copilot from helpful assistant to vigilant quality guardian that enforces testing before any commits.
+Configure GitHub Copilot to enforce testing before any commits by updating its core instructions.
 
-**What this phase achieves**: Rewrite core Copilot instructions to establish comprehensive DevOps practices. Creates AI behavior that automatically refuses commits unless all tests pass.
+**What this phase achieves**: Updates core Copilot instructions to establish comprehensive DevOps practices. Configures AI behaviour to prevent commits unless all tests pass.
 
 **User Prompt:**
 ```
-Now I want to update the .github/copilot-instructions.md file to establish DevOps best practices and quality gates. The AI should run 'npm test' before git commits and avoid committing if tests fail. Make these safeguards part of the AI's standard workflow and behavior rules.
+Now I want to update the .github/copilot-instructions.md file to establish DevOps best practices and quality gates. The AI should run 'npm test' before git commits and avoid committing if tests fail. Make these safeguards part of the AI's standard workflow and behaviour rules.
 ```
 
 **Expected AI Actions:**
 - **Completely rewrite** `.github/copilot-instructions.md` with comprehensive DevOps best practices
 - Establish **mandatory testing protocol** with zero tolerance for failing tests
-- Create **AI assistant behavior requirements** that enforce pre-flight test checks
+- Create **AI assistant behaviour requirements** that enforce pre-flight test checks
 - Include **forbidden actions** preventing code changes when tests fail
-- Configure **test-first development workflow** as the default behavior
+- Configure **test-first development workflow** as the default behaviour
 - Add **advanced quality gates** for performance, security, and accessibility
 - Document **complete cleanup protocols** and commit standards
 - **Critical**: New instructions create safeguards that automatically run tests before commits
@@ -763,11 +768,11 @@ Now I want to update the .github/copilot-instructions.md file to establish DevOp
 
 ### **Phase 5: Manually Introduce Bug & Demonstrate Detection** 🛡️
 
-**🎪 The Grand Finale: Safeguards in Action**
+**🎪 Testing the Safeguards**
 
-Deliberately introduce the CSS bug and watch AI safeguards automatically detect, fix, and validate before allowing commit to proceed.
+Deliberately introduce the CSS bug and observe AI safeguards automatically detecting, fixing, and validating before allowing the commit to proceed.
 
-**What this phase achieves**: Demonstrate AI-powered quality gates working as designed. Watch AI catch bugs during commit attempts, fix them automatically, and ensure tests pass.
+**What this phase achieves**: Demonstrates AI-powered quality gates working as designed. Observe AI catching bugs during commit attempts, fixing them automatically, and ensuring tests pass.
 
 **Step 5a: Manually Introduce the Bug**
 
@@ -785,9 +790,9 @@ Deliberately introduce the CSS bug and watch AI safeguards automatically detect,
 
 **Step 5b: Trigger Safeguards Through Commit Attempt**
 
-**🎬 The Moment of Truth**
+**🎬 Testing Detection**
 
-Innocently attempt to commit changes and watch AI spring into action with quality-obsessed behavior.
+Attempt to commit changes and observe AI enforcing quality gates.
 
 **User Prompt:**
 ```
@@ -823,7 +828,7 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 - Verify complete cleanup with `git status` and directory listing
 - Confirm workspace restored to original main branch state
 
-**🏆 Multi-Stage Demo Complete**: You've experienced the complete evolution of AI collaboration - from guided assistant to autonomous teammate to proactive quality guardian!
+**🏆 Multi-Stage Demo Complete**: The demo has covered three approaches to AI collaboration - from guided assistant to autonomous teammate to proactive quality guardian.
 
 ## 📚 Key Takeaways
 
@@ -836,7 +841,7 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 
 ### **Instruction Layer Comparison:**
 
-| **Aspect** | **Specialized Agent** | **Enhanced General Instructions** |
+| **Aspect** | **Specialised Agent** | **Enhanced General Instructions** |
 |------------|----------------------|----------------------------------|
 | **Activation** | Via explicit request or context | Always active by default |
 | **Focus** | Creating effective prompts for any task | Enforcing quality standards |
@@ -859,8 +864,6 @@ The multi-stage demo is complete! Please clean up by deleting the demo branch bo
 - [JavaScript Unit Testing Guide](https://jestjs.io/docs/getting-started)
 
 ---
-
-**Ready to demonstrate how AI can catch and fix bugs before they reach version control!** 🚀
 
 
 
