@@ -28,17 +28,48 @@ graph LR
 
 **Same Bug, Three Approaches:**
 - **Stage 1**: You direct AI to find and fix the CSS bug step-by-step
-- **Stage 2**: You assign the bug to AI and it handles everything independently *(requires GitHub Copilot Pro or higher)*
+- **Stage 2**: You assign the bug to AI and it handles everything independently
+  > **📋 Note**: Stage 2 requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include this capability. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents) for details.
 - **Stage 3**: AI catches and fixes the bug before you even commit it
 
-> **📋 Stage 2 Note**: Stage 2 requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include this capability. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents) for details.
+### 📸 The Bug: Before & After
+
+**Before** (Broken - `styls.css`):  
+![Unstyled World Clock page](./screenshots/world-clock-broken.png)
+
+**After** (Fixed - `styles.css`):  
+![Styled World Clock page](./screenshots/world-clock-fixed.png)
+
+> 💡 **Visual Impact**: This single-character typo completely breaks the user experience. The safeguards in Stage 3 catch this before it reaches version control.
 
 ## 🎮 How to Use This Multi-Stage Demo
 
 This demo covers three progressive AI collaboration approaches using the same codebase and bug scenario. Each stage demonstrates different AI capabilities and workflows.
 
+> **📌 Recommended Approach**: This demo is designed to be completed **sequentially from Stage 1 through Stage 3** for the full learning experience. Each stage builds on concepts from the previous one, showing the evolution of AI collaboration. However, individual stages can be completed standalone if time is limited (see Prerequisites for each stage for setup requirements).
+
 **🎯 What You'll Learn:**
 How AI collaboration progresses from manual guidance → autonomous execution → proactive prevention, affecting both development processes and quality assurance practices.
+
+## ⚡ Quick Start
+
+> **🚀 Want to jump in? Here's your 10-minute setup:**
+>
+> 1. **Create your copy**: Click the "Copy Exercise" button above
+> 2. **Clone locally**: `git clone <your-repo-url>`
+> 3. **Open in VS Code**: Ensure GitHub Copilot is installed and authenticated
+> 4. **Start MCP Server**:
+>    - Press `Ctrl+Shift+P`
+>    - Search for `MCP: Show Installed Server`
+>    - Right-click `github`
+>    - Select `Start Server`
+> 5. **Verify connection**: Ask Copilot "Can you list the github issues in this repository using MCP server?"
+> 6. **Choose your stage**:
+>    - **Stage 1** (30-45 min): Human-guided AI workflow - perfect for first-timers
+>    - **Stage 2** (30-45 min): Autonomous AI workflow - requires Copilot Pro
+>    - **Stage 3** (45-60 min): Safeguards AI workflow - best after Stage 2
+>
+> 💡 **First time?** Start with Stage 1 to learn the fundamentals.
 
 ## Prerequisites
 
@@ -112,6 +143,11 @@ The World Clock web application has a **critical bug** - the CSS stylesheet is n
 **File**: `index.html` (line 7)  
 **Issue**: `<link rel="stylesheet" href="styls.css">` ❌ (missing 'e')  
 **Should be**: `<link rel="stylesheet" href="styles.css">` ✅
+
+```diff
+- <link rel="stylesheet" href="styls.css">
++ <link rel="stylesheet" href="styles.css">
+```
 
 **Impact**: The entire page appears unstyled, breaking the user experience completely.
 
@@ -349,6 +385,11 @@ This demonstrates the transition from **AI as a tool** (requiring step-by-step h
 ## 📋 Stage Scenario: CSS Stylesheet Bug
 
 **Note**: This stage uses the **same CSS bug scenario as Stage 1** (typo in `index.html` line 7: `styls.css` should be `styles.css`). The difference is in how we approach the fix.
+
+```diff
+- <link rel="stylesheet" href="styls.css">
++ <link rel="stylesheet" href="styles.css">
+```
 
 ### 🤖 **The Autonomous AI Strategy**
 
@@ -598,6 +639,13 @@ Great! Now that the fix is merged, can you verify locally that all is working fi
 - Close the issue with appropriate completion status
 - Summarise the successful autonomous workflow completion
 
+> **🎯 Next Steps**:
+> - **Continuing to Stage 3?** → You're ready! The demo branch with the fix is exactly what Stage 3 needs.
+> - **Stopping here?** → Run additional cleanup to delete the demo branch:
+>   ```
+>   Please delete the demo branch both locally and remotely, and switch back to main.
+>   ```
+
 **🏁 Stage 2 Complete**: You've experienced autonomous AI development. The fix is now verified locally, ready for Stage 3's safeguards demonstration.
 
 ---
@@ -621,6 +669,11 @@ Instead of fixing bugs after they're discovered, this stage shows how **GitHub C
 
 **Target Bug**: `<link rel="stylesheet" href="styls.css">` ❌ (missing 'e')  
 **Correct Reference**: `<link rel="stylesheet" href="styles.css">` ✅
+
+```diff
+- <link rel="stylesheet" href="styls.css">
++ <link rel="stylesheet" href="styles.css">
+```
 
 **The Shift**: From reactive debugging → proactive prevention through automated quality gates.
 
@@ -648,7 +701,25 @@ This stage builds four layers of protection:
 - The website is working correctly
 - You're ready to add safeguards that will catch future bugs
 
-**GitHub Copilot Plan Requirement**: Stage 2 requires **GitHub Copilot Pro** (or higher: Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include access to Copilot Coding Agent. For plan details, see [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents).
+> **🎯 Starting Stage 3 Directly?**  
+> If you haven't completed Stage 2 but want to jump straight to Stage 3, you'll need to manually set up the demo branch first:
+> 
+> 1. **Create demo branch**:
+>    ```
+>    Can you create a demo branch remotely from main and switch to it.
+>    ```
+> 
+> 2. **Fix the CSS bug manually**:
+>    - Open `index.html`
+>    - Change line 7: `href="styls.css"` → `href="styles.css"`
+>    - Save the file
+> 
+> 3. **Commit the fix**:
+>    ```
+>    Please commit this CSS fix to the demo branch with message "fix: correct CSS stylesheet reference"
+>    ```
+> 
+> 4. **Now start Stage 3 from Phase 1** (Create Prompt Engineer Agent)
 
 ## 🗺️ Stage Overview
 
