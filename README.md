@@ -1,5 +1,13 @@
 # GitHub AI Workflow Evolution - Multi-Stage Demo
 
+## 🚀 Start Exercise
+
+Create your own copy of this exercise to follow along with the AI workflow demonstrations:
+
+[![Copy Exercise](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github)](https://github.com/new?template_name=github-ai-workflow-demo&template_owner=david-pizzi-cg&owner=%40me&name=github-ai-workflow-demo&description=Exercise:+Learn+GitHub+AI+workflow+evolution+with+Copilot&visibility=public)
+
+This will create a new public repository in your GitHub account based on this template, allowing you to practice the three-stage AI workflow evolution hands-on.
+
 ## 🎯 Overview
 
 This multi-stage demonstration explores three distinct AI collaboration approaches using a consistent CSS bug scenario. The demo illustrates the progression from guided AI assistance to autonomous execution and proactive quality assurance.
