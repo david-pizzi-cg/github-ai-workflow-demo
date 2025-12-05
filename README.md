@@ -35,10 +35,10 @@ graph LR
 ### 📸 The Bug: Before & After
 
 **Before** (Broken - `styls.css`):  
-![Unstyled World Clock page](./screenshots/world-clock-broken.png)
+<img src="./screenshots/world-clock-broken.png" alt="Unstyled World Clock page" width="400">
 
 **After** (Fixed - `styles.css`):  
-![Styled World Clock page](./screenshots/world-clock-fixed.png)
+<img src="./screenshots/world-clock-fixed.png" alt="Styled World Clock page" width="400">
 
 > 💡 **Visual Impact**: This single-character typo completely breaks the user experience. The safeguards in Stage 3 catch this before it reaches version control.
 
