@@ -14,8 +14,6 @@ This repository demonstrates how GitHub Copilot and GitHub Agents evolve from a 
 
 The app is intentionally simple — `index.html`, `styles.css`, `script.js` — so the same CSS bug can be fixed through three increasingly advanced AI workflows, illustrating the progression from guided AI assistance to autonomous execution and proactive quality assurance.
 
-> **⚠️ Important**: This demo was created and tested using **Claude Sonnet 4**. For best results and consistent behaviour matching the documented workflow, use Claude Sonnet 4 or higher. Other language models may produce different results and behaviours.
-
 ## 🔄 The Evolution Journey
 
 ```mermaid
@@ -32,7 +30,6 @@ graph LR
 **Same Bug, Three Approaches:**
 - **Stage 1**: You direct AI to find and fix the CSS bug step-by-step
 - **Stage 2**: You assign the bug to AI and it handles everything independently
-  > **📋 Note**: Stage 2 requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise) to access the Copilot Coding Agent feature. The free Copilot plan does not include this capability. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents) for details.
 - **Stage 3**: AI catches and fixes the bug before you even commit it
 
 ### 📸 The Bug: Before & After
@@ -89,11 +86,15 @@ Quick reference for live demonstrations:
 ## Prerequisites
 
 - **VS Code with GitHub Copilot**: AI development assistant ready for guided workflows
-- **GitHub Copilot Pro or higher**: Required for Stage 2 (Copilot Coding Agent). Free plan covers Stage 1 and 3 only. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents)
-- **Claude Sonnet 4 or higher recommended**: This demo was created and tested using Claude Sonnet 4. Other models may exhibit different behaviour and produce varying results
 - **GitHub MCP Server configured**: For seamless GitHub operations from VS Code
 - **Live Server extension installed**: OPTIONAL - to visualise the bug and fix
 - **Git repository connected to GitHub**: With appropriate permissions for issues and PRs
+
+> **⚠️ Important Requirements:**
+> 
+> - **Claude Sonnet 4 or higher recommended**: This demo was created and tested using Claude Sonnet 4. For best results and consistent behaviour matching the documented workflow, use Claude Sonnet 4 or higher. Other language models may produce different results and behaviours.
+> 
+> - **GitHub Copilot Pro required for Stage 2**: Stage 2 (Copilot Coding Agent) requires **GitHub Copilot Pro** or higher (Pro+, Business, or Enterprise). The free Copilot plan does not include this capability and only covers Stage 1 and Stage 3. See [GitHub Copilot Plans](https://docs.github.com/en/copilot/get-started/plans#agents) for details.
 
 ### 🔧 MCP Server Setup
 
