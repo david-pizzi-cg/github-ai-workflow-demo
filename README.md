@@ -10,7 +10,9 @@ This will create a new public repository in your GitHub account based on this te
 
 ## 🎯 Overview
 
-This multi-stage demonstration explores three distinct AI collaboration approaches using a consistent CSS bug scenario. The demo illustrates the progression from guided AI assistance to autonomous execution and proactive quality assurance.
+This repository demonstrates how GitHub Copilot and GitHub Agents evolve from a simple assistant into an autonomous teammate and finally a guardian that enforces workflow quality — all demonstrated through fixing a real bug in a small web app.
+
+The app is intentionally simple — `index.html`, `styles.css`, `script.js` — so the same CSS bug can be fixed through three increasingly advanced AI workflows, illustrating the progression from guided AI assistance to autonomous execution and proactive quality assurance.
 
 > **⚠️ Important**: This demo was created and tested using **Claude Sonnet 4**. For best results and consistent behaviour matching the documented workflow, use Claude Sonnet 4 or higher. Other language models may produce different results and behaviours.
 
@@ -25,6 +27,7 @@ graph LR
     style B fill:#45b7d1,colour:#fff,stroke:#333,stroke-width:3px
     style C fill:#96ceb4,colour:#fff,stroke:#333,stroke-width:3px
 ```
+*Figure: The three-stage evolution of AI collaboration - from guided assistant to autonomous teammate to proactive guardian.*
 
 **Same Bug, Three Approaches:**
 - **Stage 1**: You direct AI to find and fix the CSS bug step-by-step
@@ -34,13 +37,15 @@ graph LR
 
 ### 📸 The Bug: Before & After
 
+**This single-character typo completely breaks the user experience** — transforming a polished application into plain, unstyled HTML.
+
 **Before** (Broken - `styls.css`):  
-<img src="./screenshots/world-clock-broken.png" alt="Unstyled World Clock page" width="400">
+<img src="./screenshots/world-clock-broken.png" alt="Unstyled World Clock page" width="400">  
+*Figure: World Clock page with broken CSS reference - Plain unstyled HTML showing the impact of the typo.*
 
 **After** (Fixed - `styles.css`):  
-<img src="./screenshots/world-clock-fixed.png" alt="Styled World Clock page" width="400">
-
-> 💡 **Visual Impact**: This single-character typo completely breaks the user experience. The safeguards in Stage 3 catch this before it reaches version control.
+<img src="./screenshots/world-clock-fixed.png" alt="Styled World Clock page" width="400">  
+*Figure: World Clock page with correct CSS reference - Fully styled application with gradients and card layout.*
 
 ## 🎮 How to Use This Multi-Stage Demo
 
@@ -70,6 +75,16 @@ How AI collaboration progresses from manual guidance → autonomous execution �
 >    - **Stage 3** (45-60 min): Safeguards AI workflow - best after Stage 2
 >
 > 💡 **First time?** Start with Stage 1 to learn the fundamentals.
+
+### 🎤 Demo Flow (For Presenters)
+
+Quick reference for live demonstrations:
+
+1. **Show broken UI** - Open `index.html` in browser (unstyled page)
+2. **Fix via Stage 1** - Manual guidance workflow with GitHub MCP
+3. **Repeat via Stage 2** - Agent automation with GitHub Coding Agent
+4. **Finish with Stage 3** - Policy enforcement with Copilot Instructions
+5. **Highlight impact** - Same bug, three approaches, increasing automation
 
 ## Prerequisites
 
@@ -201,6 +216,7 @@ graph TD
     style F fill:#a8e6cf
     style G fill:#ff6b6b
 ```
+*Figure: Stage 1 workflow - Human-guided AI development through seven phases from issue discovery to cleanup.*
 
 ### **Quick Start Overview**
 
@@ -438,6 +454,7 @@ graph TD
     style E fill:#ff9ff3
     style F fill:#a8e6cf
 ```
+*Figure: Stage 2 workflow - Autonomous AI development with GitHub Coding Agent handling the entire development cycle.*
 
 ### **Quick Start Overview**
 
@@ -533,9 +550,8 @@ Since we need to target the `demo` branch (not `main`) for this demonstration, y
 6. **Close the branch selector** and optionally add instructions in the "Optional prompt" field
 7. **Click "Assign"** to confirm and start GitHub Coding Agent
 
-![Copilot Assignment Dialog](./screenshots/copilot-assignment-dialog.png)
-
-*The assignment dialog with the base branch selector showing `demo` selected. This ensures the PR will target the demo branch instead of main.*
+![Copilot Assignment Dialog](./screenshots/copilot-assignment-dialog.png)  
+*Figure: Copilot Coding Agent assignment dialog - The base branch selector showing `demo` selected. This ensures the PR will target the demo branch instead of main.*
 
 **Why this matters**: GitHub Coding Agent will create its PR against the branch you specify here. By selecting `demo`, we ensure the fix is merged to our demonstration branch, not directly to `main`.
 
@@ -557,11 +573,11 @@ After assigning the issue to GitHub Coding Agent, it will create a pull request.
 3. **Click "View Session"** in the GitHub pull request interface to see real-time progress
 4. **Watch the agent's workflow** as it analyzes code, creates branches, and implements fixes
 
-![GitHub Coding Agent Session Progress](./screenshots/copilot-session-progress.png)
+![GitHub Coding Agent Session Progress](./screenshots/copilot-session-progress.png)  
+*Figure: GitHub Coding Agent session progress - Real-time view of the agent working through the development workflow with live status updates.*
 
-*This shows the agent working through the development workflow with live status updates.*
-
-![GitHub Coding Agent View Session](./screenshots/copilot-view-session.png)
+![GitHub Coding Agent View Session](./screenshots/copilot-view-session.png)  
+*Figure: View Session button in PR interface - Access point for monitoring agent progress.*
 
 #### **⏳ Step 2: Wait for Review Request**
 The GitHub Coding Agent will work autonomously until it completes the fix and requests human review:
@@ -570,9 +586,8 @@ The GitHub Coding Agent will work autonomously until it completes the fix and re
 2. **Wait for the agent** to mark its work as complete and ready for review
 3. **Look for the review request notification** - this signals it's time to proceed to Phase 5
 
-![GitHub Coding Agent Review Request](./screenshots/copilot-review-request.png)
-
-*When you see this review request, the agent has finished its work and Phase 5 can begin.*
+![GitHub Coding Agent Review Request](./screenshots/copilot-review-request.png)  
+*Figure: GitHub Coding Agent review request - When you see this notification, the agent has finished its work and Phase 5 can begin.*
 
 > **⚠️ Important**: Do not proceed to Phase 5 until GitHub Coding Agent has completed its work and explicitly requested a review. The automated phase can take several minutes depending on the complexity of the fix.
 
@@ -661,7 +676,7 @@ This is **Stage 3** of the comprehensive multi-stage demo, demonstrating the evo
 - **Stage 2**: Autonomous AI workflow (AI as teammate)
 - **This Stage (Stage 3)**: **Safeguards AI workflow (AI as quality gatekeeper)**
 
-Instead of fixing bugs after they're discovered, this stage shows how **GitHub Copilot Instructions** create specialised AI personas that automatically catch and fix issues before they reach version control.
+**Stage 3 shows how Copilot Instructions can prevent whole classes of bugs from ever reaching the repo — even before a Pull Request is created.** Instead of fixing bugs after they're discovered, this stage shows how **GitHub Copilot Instructions** create specialised AI personas that automatically catch and fix issues before they reach version control.
 
 ## 📋 Stage Scenario
 
@@ -758,6 +773,7 @@ graph TD
     style E fill:#a29bfe
     style F fill:#ff6b6b,colour:#fff
 ```
+*Figure: Stage 3 workflow - Safeguards-driven development with proactive bug detection and automated quality gates.*
 
 ### **Phase 1: Create Prompt Engineer Agent** 👨‍💻
 
